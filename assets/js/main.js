@@ -89,7 +89,10 @@ cacao   [3]
 // CREARE LA FUNZIONE DI UNA SOMMA DI DUE NUMERI
 // - definire i due numeri
 const first_number = 20;
+console.log('il primo numero è: ' + first_number);
 const second_number = 37;
+console.log('il secondo numero è: ' + second_number);
+
 
 //mi serve sicuramente una funzione con due parametri
 function sum (num_1, num_2){
@@ -126,4 +129,19 @@ function wordString_2 (word_3, word_4){
 
 wordString_2(word_3, word_4);
 
+// CREARE LA FUNZIONE DI UNA SOTTRAZIONE DI DUE NUMERI
+const number_3 = 150;
+console.log('il primo numero è: ' + number_3);
+const number_4 = 50;
+console.log('il secondo numero è: ' + number_4);
+
+//mi serve sicuramente una funzione con due parametri
+function sott (num_4, num_3){
+    //invertito volontariamente i parametri per vedere se dava anche numeri negativi
+    sottrazione = num_3 - num_4;
+    console.log('la sottrazione dei due numeri è: ', sottrazione);
+}
+
+//evoco la funzione e assegno i due valori da inserire al posto dei parametri
+sott(number_3, number_4);
 
