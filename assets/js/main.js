@@ -89,9 +89,9 @@ cacao   [3]
 // CREARE LA FUNZIONE DI UNA SOMMA DI DUE NUMERI
 // - definire i due numeri
 const first_number = 20;
-console.log('il primo numero è: ' + first_number);
+console.log('(1) il primo numero è: ' + first_number);
 const second_number = 37;
-console.log('il secondo numero è: ' + second_number);
+console.log('(2) il secondo numero è: ' + second_number);
 
 
 //mi serve sicuramente una funzione con due parametri
@@ -104,7 +104,9 @@ function sum (num_1, num_2){
 //evoco la funzione e assegno i due valori da inserire al posto dei parametri
 sum(first_number, second_number);
 
+console.log('');
 
+/* NEW FUNCTION ****************************************************************************/
 // CREARE LA FUNZIONE DI UNA STRINGA CHE RESTITUISCE DUE PAROLE - versione 1
 const first_word = 'buongiorno';
 const second_word = 'buonasera';
@@ -118,6 +120,9 @@ function wordString_1 (word_1, word_2){
 
 wordString_1(first_word, second_word);
 
+console.log('');
+
+/* NEW FUNCTION ****************************************************************************/
 // CREARE LA FUNZIONE DI UNA STRINGA CHE RESTITUISCE DUE PAROLE - versione 2
 const word_3 = 'buongiorno';
 const word_4 = 'buonasera';
@@ -129,19 +134,61 @@ function wordString_2 (word_3, word_4){
 
 wordString_2(word_3, word_4);
 
+console.log('');
+
+/* NEW FUNCTION ****************************************************************************/
 // CREARE LA FUNZIONE DI UNA SOTTRAZIONE DI DUE NUMERI
 const number_3 = 150;
-console.log('il primo numero è: ' + number_3);
+console.log('(3) il primo numero è: ' + number_3);
 const number_4 = 50;
-console.log('il secondo numero è: ' + number_4);
+console.log('(4) il secondo numero è: ' + number_4);
 
 //mi serve sicuramente una funzione con due parametri
-function sott (num_4, num_3){
+function sott (num_1, num_2){
     //invertito volontariamente i parametri per vedere se dava anche numeri negativi
-    sottrazione = num_3 - num_4;
+    sottrazione = num_1 - num_2;
     console.log('la sottrazione dei due numeri è: ', sottrazione);
 }
 
 //evoco la funzione e assegno i due valori da inserire al posto dei parametri
 sott(number_3, number_4);
+
+console.log('');
+
+/* NEW FUNCTION ****************************************************************************/
+// CREARE LA FUNZIONE DI UNA SOMMA DI DUE NUMERI CON RETURN
+const number_5 = 130;
+console.log('(5) il primo numero è: ' + number_5);
+const number_6 = 75;
+console.log('(6) il secondo numero è: ' + number_6);
+
+function sum (num_1, num_2){
+    somma_numeri = num_1 + num_2;
+    return sum;
+}
+
+const risultato = sum(number_5, number_6);
+console.log('la somma dei due numeri è: ' + somma_numeri);
+
+console.log('');
+/* NEW FUNCTION ****************************************************************************/
+
+
+
+/* function generateRandomNumberList() {
+    const numbers = [];
+    while (numbers.length < 6) {
+        const number = Math.floor(Math.random() * 100) + 1;
+
+        if (!numbers.includes(number)) {
+            numbers.push(number);
+        }
+    }
+    console.log('elenco dei numeri random: ' + numbers);
+    return numbers;
+}
+
+const mieiNumeri = generateRandomNumberList();
+console.log(mieiNumeri); */
+
 
