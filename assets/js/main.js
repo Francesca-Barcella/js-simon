@@ -91,20 +91,39 @@ cacao   [3]
 const first_number = 20;
 const second_number = 37;
 
-
 //mi serve sicuramente una funzione con due parametri
 function sum (num_1, num_2){
     //dentro dovrò eseguire la somma dei due parametri
     somma = num_1 + num_2;
-    console.log(somma);
+    console.log('la somma dei due numeri è: ', somma);
 }
 
 //evoco la funzione e assegno i due valori da inserire al posto dei parametri
 sum(first_number, second_number);
 
 
+// CREARE LA FUNZIONE DI UNA STRINGA CHE RESTITUISCE DUE PAROLE - versione 1
+const first_word = 'buongiorno';
+const second_word = 'buonasera';
 
+function wordString_1 (word_1, word_2){
+    first_string = word_1;
+    second_string = word_2;
 
+    console.log('parola 1 e 2: ' + first_string, second_string);
+}
 
-// CREARE LA FUNZIONE DI UNA STRINGA CHE RESTITUISCE DUE PAROLE
+wordString_1(first_word, second_word);
+
+// CREARE LA FUNZIONE DI UNA STRINGA CHE RESTITUISCE DUE PAROLE - versione 2
+const word_3 = 'buongiorno';
+const word_4 = 'buonasera';
+
+function wordString_2 (word_3, word_4){
+    string = word_3 + word_4;
+    console.log('parola 3 e 4: ' + string);
+}
+
+wordString_2(word_3, word_4);
+
 
