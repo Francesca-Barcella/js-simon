@@ -6,7 +6,7 @@ Consigli del giorno:
 Pensate prima in italiano.
 Dividete in piccoli problemi la consegna.
 Individuate gli elementi di cui avete bisogno per realizzare il programma.
-***************************************************/
+
 
 //alert('ciao, funziona!');
 
@@ -32,17 +32,15 @@ const containerNumber = document.querySelectorAll('.container_number');
 console.log(containerNumber);
 
 const containerTimer = document.querySelectorAll('.container_timer');
-console.log(containerTimer);
+console.log(containerTimer); 
 
 
-/* const numbers = [];
+ const numbers = [];
 while (numbers.length < 6) {
     const number = Math.floor(Math.random() * 100) + 1;
     if (numbers.indexOf(number) === -1) numbers.push(number);
 }
-console.log('elenco numeri ' + numbers); */
-
-
+console.log('elenco numeri ' + numbers);
 
 
 function generateRandomNumberList() {
@@ -62,16 +60,16 @@ const mieiNumeri = generateRandomNumberList();
 console.log(mieiNumeri);
 
 
-/*
+
 pane    [0]
 pasta   [1]
 farina  [2]
 cacao   [3]
-*/
+
 
 // mele
 
-function checkInArray(list, item) {
+ function checkInArray(list, item) {
 
     for (let i = 0; i < list.length; i++) {
         const currentItem = list[i];
@@ -81,8 +79,32 @@ function checkInArray(list, item) {
     }
 
     return false;
-}
+} 
 
+***************************************************/
 
 // AVVISO PER RICCARDO SE PASSI DI QUI:
 // ho fatto una zoom con Donato perchè mi incarto ancora troppo sulle funzioni, alla fine mi ha consigliato di stoppare l'esercizio e fare un po' di prove solo con le funzioni e quindi vedrai solo funzioni da qui in poi.
+
+// CREARE LA FUNZIONE DI UNA SOMMA DI DUE NUMERI
+// - definire i due numeri
+const first_number = 20;
+const second_number = 37;
+
+
+//mi serve sicuramente una funzione con due parametri
+function sum (num_1, num_2){
+    //dentro dovrò eseguire la somma dei due parametri
+    somma = num_1 + num_2;
+    console.log(somma);
+}
+
+//evoco la funzione e assegno i due valori da inserire al posto dei parametri
+sum(first_number, second_number);
+
+
+
+
+
+// CREARE LA FUNZIONE DI UNA STRINGA CHE RESTITUISCE DUE PAROLE
+
