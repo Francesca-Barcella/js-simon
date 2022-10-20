@@ -170,7 +170,6 @@ function sum(num_1, num_2) {
 const risultato = sum(number_5, number_6);
 console.log('la somma dei due numeri è: ' + somma_numeri);
 
-
 console.log('');
 
 /*NEW FUNCTION ****************************************************************************/
@@ -184,17 +183,51 @@ console.log(thisYear);
 // chiedo all'utente l'anno di nascita
 const userYearOfBirth = Number(prompt('in che anno sei nato?'));
 // calcolo l'età dell'utente
-function calcuserAge (num_1, num_2){
+function calcuserAge(num_1, num_2) {
     userAge = num_1 - num_2;
     console.log('la tua età è: ' + userAge);
 }
-calcuserAge (thisYear, userYearOfBirth);
-//prova a restituire il messaggio "sei maggiorenne" true/false
+calcuserAge(thisYear, userYearOfBirth);
+
+/*NEW FUNCTION ****************************************************************************/
+//MAGGIORENNE
 function adult(num) {
-    if (num > 18){
+    if (num > 18) {
         console.log('sei maggiorenne');
     } else {
         console.log('sei minorenne');
     }
 }
-adult (userAge);
+adult(userAge);
+
+/*NEW FUNCTION ****************************************************************************/
+//UTENTE NATO IN GIORNO PARI/DISPARI
+
+const userDayOfBirth = Number(prompt('inserisci il numero del tuo giorno di nascita'));
+console.log('il numero del giorno in cui sei nato è: ' + userDayOfBirth);
+
+function paridispari(num) {
+    if (num % 2 === 0) {
+        console.log('sei nato in un giorno pari');
+    } else {
+        console.log('sei nato in un giorno dispari');
+    }
+}
+
+paridispari(userDayOfBirth);
+
+/*NEW FUNCTION ****************************************************************************/
+//UTENTE NATO IN GIORNO PARI/DISPARI con isPari
+
+const userDayOfBirth_2 = Number(prompt('inserisci il numero del tuo giorno di nascita'));
+console.log('il numero del giorno in cui sei nato è: ' + userDayOfBirth_2);
+
+function paridispari(num) {
+    if (num % 2 === 0) {
+        console.log('sei nato in un giorno pari');
+    } else {
+        console.log('sei nato in un giorno dispari');
+    }
+}
+
+paridispari(userDayOfBirth_2);
