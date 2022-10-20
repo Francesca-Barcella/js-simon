@@ -100,8 +100,8 @@ console.log('(2) il secondo numero è: ' + second_number);
 //mi serve sicuramente una funzione con due parametri
 function sum(num_1, num_2) {
     //dentro dovrò eseguire la somma dei due parametri
-    somma = num_1 + num_2;
-    console.log(somma);
+    const somma = num_1 + num_2;
+    console.log('Dentro sum()', somma);
 }
 
 //evoco la funzione e assegno i due valori da inserire al posto dei parametri
@@ -118,7 +118,7 @@ function wordString_1(word_1, word_2) {
     first_string = word_1;
     second_string = word_2;
 
-    console.log('parola 1 e 2: ' + first_string, second_string);
+    console.log('parola 1 e 2: ' + first_string + ' ' + second_string);
 }
 
 wordString_1(first_word, second_word);
@@ -162,13 +162,14 @@ console.log('(5) il primo numero è: ' + number_5);
 const number_6 = 78;
 console.log('(6) il secondo numero è: ' + number_6);
 
+
 function sum(num_1, num_2) {
-    somma_numeri = num_1 + num_2;
-    return sum;
+    const somma_numeri = num_1 + num_2;
+    return somma_numeri;
 }
 
 const risultato = sum(number_5, number_6);
-console.log('la somma dei due numeri è: ' + somma_numeri);
+console.log('la somma dei due numeri è: ' + risultato);
 
 console.log('');
 
